@@ -1,0 +1,36 @@
+#one-news-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 750px;
+  padding: 10px;
+}
+
+#cover img {
+  width: 50vh;
+}
+
+#title h1{
+  font-size: 1.5rem;
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+#description {
+  font-size: 1.rem;
+  color:gray;
+  margin: 10px 0px 10px 0px;
+}
+
+#content {
+  margin-top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.3rem;
+}

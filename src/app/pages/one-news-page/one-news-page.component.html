@@ -1,0 +1,16 @@
+<div id="one-news-page" [@fadeInAnimation]="true" *ngIf="news" class="text-align-center">
+  <div id="cover" *ngIf="!news.noImage">
+    <img [src]="news.urlToImage" title="Image article" />
+  </div>
+  <div id="title">
+    <h1>{{ news.title }}</h1>
+  </div>
+  <div id="date">
+    <i class="material-icons md-16">access_time</i>
+    {{ news.publishedAt | date:'dd/MM/yy à HH:mm':'fr' }}
+  </div>
+  <div id="description"> 
+    {{ news.description }}
+  </div>
+  <div id="content" [innerHTML]="newsContentFormatted()"></div>
+</div>

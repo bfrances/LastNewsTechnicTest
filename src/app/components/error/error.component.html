@@ -1,0 +1,4 @@
+<div id="error">
+  <img *ngIf="!noImage" [src]="imgSrc" (error)="noImage = true" title="Error" /><br />
+  {{ message }}
+</div>

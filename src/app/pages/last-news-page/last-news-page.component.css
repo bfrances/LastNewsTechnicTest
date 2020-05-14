@@ -1,0 +1,45 @@
+#news {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  display:flex;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: justify;
+}
+
+#news #title {
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+#news #annotations {
+  padding: 5px;
+}
+
+#news:hover {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+
+#news #title:hover {
+  text-decoration: underline;
+}
+
+#news #annotations {
+  font-style: italic;
+  font-size: 14px;
+  color: grey;
+  text-align: left;
+}
+
+#news img {
+  border-radius: 5px;
+  max-width: 120px;
+}
+
+#noNews {
+  color:lightgray;
+  font-size:2.0rem;
+}

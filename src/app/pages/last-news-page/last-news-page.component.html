@@ -1,0 +1,11 @@
+<div id="news" [@fadeInAnimation]="true" *ngFor="let news of session.lastNews" (click)="clickOnNews(news)">
+  <div>
+    <h3 id="title">{{ news.title }}</h3>
+    <div id="annotations">{{ news.titleSrc }} . Il y a {{ news.relativeSeconds | relativeTextTime }}</div>
+  </div>
+  <img *ngIf="!news.noImage" [src]="news.urlToImage" (error)="news.noImage = true" />
+</div>
+<div id="noNews" *ngIf="session.lastNews.length === 0">
+  <img src="assets/noNews.png" title="Pas d'actualité" /><br />
+  Pas d'actualité
+</div>
